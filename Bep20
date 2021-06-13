@@ -683,7 +683,7 @@ contract Shiba1 is Context, IERC20, Ownable {
     address[] private _excluded;
    
     uint256 private constant MAX = ~uint256(0);
-    uint256 private _tTotal = 1000000000000000;
+    uint256 private _tTotal = 1000000000000000000000000;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
@@ -706,8 +706,8 @@ contract Shiba1 is Context, IERC20, Ownable {
     bool public swapAndLiquifyEnabled = true;
     
     //limit tokens to total supply
-    uint256 public _maxTxAmount = 1000000000000000;
-    uint256 private numTokensSellToAddToLiquidity = 1000000000000000;
+    uint256 public _maxTxAmount = 1000000000000000000000000;
+    uint256 private numTokensSellToAddToLiquidity = 1000000000000000000000000;
     
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);
